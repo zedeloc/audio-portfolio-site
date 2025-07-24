@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Audio Engineering Portfolio</title>
+    <title>Dez Cole Audio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -14,11 +14,19 @@
             background-color: #1a202c; /* Dark background */
             color: #e2e8f0; /* Light gray text */
             line-height: 1.6;
+            /* max-width: 1000px; */
         }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 1.5rem; /* Consistent padding */
+        }
+        header {
+
+            background: url(./img/dez_fade.png) no-repeat;
+            background-color: black;
+            padding-bottom: 10rem;
         }
         .section-title {
             font-size: 2.5rem; /* Larger title for sections */
@@ -92,6 +100,9 @@
             background-color: #4f46e5; /* Darker indigo on hover */
             transform: translateY(-2px);
         }
+        .btn-bottom {
+            margin-top: 10rem;
+        }
         .footer {
             background-color: #1f2937; /* Dark gray footer */
             color: #9ca3af; /* Slightly lighter gray text */
@@ -101,17 +112,40 @@
             border-top-right-radius: 1rem;
             margin-top: 4rem;
         }
+
+        /* Skill List Styling */
+        .skill-list {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin: 0;
+            font-size: 1.1rem; /* Slightly larger font for list items */
+            color: #EAE0D5; /* Light text color */
+        }
+        .skill-list li {
+            position: relative;
+            padding-left: 1.5rem; /* Space for custom bullet */
+            margin-bottom: 0.75rem; /* Space between list items */
+        }
+        .skill-list li::before {
+            content: '•'; /* Custom bullet point */
+            color: #C6AC8F; /* Accent color for bullet */
+            position: absolute;
+            left: 0;
+            font-size: 1.2em; /* Larger bullet */
+            line-height: 1;
+            top: 0.1em; /* Adjust vertical alignment */
+        }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Header/Hero Section -->
-    <header class="bg-gradient-to-r from-indigo-700 to-purple-800 text-white py-20 rounded-b-3xl shadow-lg">
+    <header class="text-white rounded-b-2xl shadow-lg">
         <div class="container text-center">
-            <img src="https://placehold.co/150x150/6366f1/ffffff?text=Your+Photo" alt="Your Photo" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md">
-            <h1 class="text-5xl font-bold mb-3">Your Name</h1>
-            <p class="text-xl font-light mb-8">Audio Engineer | Mixer | Producer | Sound Designer</p>
-            <a href="#contact" class="btn-primary">Get in Touch</a>
+           
+            <h1 class="text-5xl font-bold mb-3">Dez Cole</h1>
+            <p class="text-xl font-light mb-8">Mixing | Editing | Mastering | Production | Sound Design</p>
+            <a href="#contact" class="btn-primary btn-bottom">Get in Touch</a>
         </div>
     </header>
 
@@ -120,9 +154,15 @@
         <section id="about" class="container mb-24">
             <h2 class="section-title">About Me</h2>
             <div class="card text-lg leading-relaxed text-gray-200">
-                <p class="mb-4">Hello! I'm [Your Name], a passionate and dedicated audio engineer with a keen ear for detail and a love for bringing sonic visions to life. With [X years] of experience in the field, I specialize in [e.g., mixing, mastering, sound design, live sound, post-production for film/TV, music production].</p>
-                <p class="mb-4">My journey into audio began with [mention a brief origin story, e.g., playing instruments, fascination with recording gear, a specific project]. Since then, I've had the privilege of working on a diverse range of projects, from independent music albums and podcasts to corporate videos and short films. I thrive on the technical challenges and creative opportunities that each project presents.</p>
-                <p>I am proficient in industry-standard DAWs like Pro Tools, Logic Pro X, and Ableton Live, and have a strong understanding of acoustics, signal flow, and advanced mixing techniques. I'm always eager to learn new technologies and push the boundaries of sound. Let's create something amazing together!</p>
+                <p class="mb-4">I'm an audio engineer and music producer with over a decade of hands-on experience recording, mixing, editing, and mastering music.  I specialize in remote mixing and editing for independent artists, crafting immersive, emotionally-driven mixes that reflect and enhance your musical vision.</p>
+
+                <p class="mb-4">I started at 14 years old making goofy songs with my buddies in high school. That lead to working in a local DIY studio named Avenue One where we recorded local bands, singer-songwriters, and rappers.</p>
+
+                <p class="mb-4">Since then, I’ve had the opportunity to compose for Tanya Nuñez’s 2017 short film <i>Dios Nunca Muere</i> (God Never Dies),  and to produce, mix, or master projects such as Lost Republic’s <i>Empire of Indifference</i>, Kenopsia’s <i>All Things Must Decay</i>, and Aztral Folk’s Eclipse Kaboom.</p>
+
+                <p class="mb-4">I am proficient in Reaper and have a strong understanding of signal flow, and advanced mixing techniques, editing (drums, guitars, vocals), and vocal tuning. I’m always learning, evolving, and pushing creative boundaries to deliver results that artists can be proud of.</p>
+
+                <p>Whether you're looking to elevate a song, polish a podcast, or bring your project to the finish line, I’m here to make you sound your best.</p>
             </div>
         </section>
 
@@ -132,55 +172,56 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/a78bfa/ffffff?text=Music+Mix" alt="Project 1: Music Mix" class="project-image">
+                    <img src="./img/atmd_SS.png" alt="Project 1: Music Mix" class="project-image">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">"Echoes of the City" - Album Mix</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Kenopsia - All Things Must Decay</h3>
                         <p class="text-gray-300 text-sm mb-4">
-                            <strong>Role:</strong> Mixing Engineer<br>
-                            <strong>Description:</strong> Full album mix for indie-rock band "The Urban Drifters." Focused on creating a dynamic and cohesive sound, enhancing vocal presence and instrument separation.
+                            <strong>Role:</strong> Production, Recording, Mixing, Mastering Engineer<br>
+                            <strong>Description:</strong> Progressive metal. All Things Must Decay showcases Kenopsia's ability mastery over intricate rhythms, melody, and dynamic songwriting.
                         </p>
-                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium">View Project Details &rarr;</a>
+                        <a href="https://www.youtube.com/watch?v=U0aIoIA2pX0" class="text-indigo-400 hover:text-indigo-300 font-medium">View On Youtube &rarr;</a>
                         <!-- You can link to a separate page, a SoundCloud/Bandcamp link, or a modal popup -->
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/60a5fa/ffffff?text=Podcast+Audio" alt="Project 2: Podcast Production" class="project-image">
+                    <img src="./img/lost_republic_sm.jpg" class="project-image">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">"Tech Talk Daily" - Podcast Audio Production</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Lost Republic - Empire of Indifference</h3>
                         <p class="text-gray-300 text-sm mb-4">
-                            <strong>Role:</strong> Audio Editor & Masterer<br>
-                            <strong>Description:</strong> End-to-end audio production for a weekly tech podcast, including noise reduction, equalization, compression, and mastering for consistent loudness across platforms.
+                            <strong>Role:</strong> Production, Mixing, Mastering<br>
+                            <strong>Description:</strong> Indie rock from the southwest. Lost Republic will make you move with their catchy songwriting, excellent vocals, and groove.
                         </p>
-                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium">Listen Here &rarr;</a>
+                        <a href="https://lostrepublic.bandcamp.com/album/empire-of-indifference" class="text-indigo-400 hover:text-indigo-300 font-medium">Listen on Bandcamp &rarr;</a>
+                        <a href="https://open.spotify.com/album/2XwAgjaDSyikAgJS5IQoX4" class="text-indigo-400 hover:text-indigo-300 font-medium">Listen on Spotify &rarr;</a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/34d399/ffffff?text=Film+Sound" alt="Project 3: Short Film Sound Design" class="project-image">
+                    <img src="./img/eclipse_kaboom_sm.jpg" alt="Project 3: Album Master" class="project-image">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">"The Last Signal" - Short Film Sound Design</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2"> Aztral Folk - Eclipse Kaboom</h3>
                         <p class="text-gray-300 text-sm mb-4">
-                            <strong>Role:</strong> Sound Designer & Re-recording Mixer<br>
-                            <strong>Description:</strong> Created immersive soundscapes, foley, and dialogue clean-up, then mixed the final audio for a 15-minute sci-fi short film.
+                            <strong>Role:</strong> Mastering<br>
+                            <strong>Description:</strong> Mesmerizing psychedelic fusion from both sides of the border.
                         </p>
-                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium">Watch Trailer &rarr;</a>
+                        <a href="https://aztralfolk.bandcamp.com/album/eclipse-kaboom" class="text-indigo-400 hover:text-indigo-300 font-medium">Listen on Bandcamp &rarr;</a>
                     </div>
                 </div>
 
                 <!-- Add more projects as needed -->
                 <!-- Project 4 -->
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/fcd34d/ffffff?text=Live+Sound" alt="Project 4: Live Sound Reinforcement" class="project-image">
+                    <img src="./img/god_never_dies_sm.png" alt="Project 4: Live Sound Reinforcement" class="project-image">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">"Summer Fest" - Live Sound Reinforcement</h3>
+                        <h3 class="text-2xl font-semibold text-gray-100 mb-2">Dios Nunca Muere - Tanya Nuñez</h3>
                         <p class="text-gray-300 text-sm mb-4">
-                            <strong>Role:</strong> FOH Engineer<br>
-                            <strong>Description:</strong> Managed front-of-house sound for multiple bands at a local music festival, ensuring optimal sound quality and audience experience.
+                            <strong>Role:</strong> Composer<br>
+                            <strong>Description:</strong> A student film for the University of Arizona's "I Dream In Widescreen" competition.
                         </p>
-                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium">See Event Photos &rarr;</a>
+                        <a href="https://www.pbs.org/video/dios-nunca-muere-o7w006/" class="text-indigo-400 hover:text-indigo-300 font-medium">View on PBS &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -190,37 +231,43 @@
         <section id="skills" class="container mb-24">
             <h2 class="section-title">My Skills</h2>
             <div class="card">
-                <h3 class="text-xl font-semibold text-gray-100 mb-4">Technical Skills:</h3>
-                <div class="flex flex-wrap">
-                    <span class="skill-badge">Mixing & Mastering</span>
-                    <span class="skill-badge">Sound Design</span>
-                    <span class="skill-badge">Audio Editing</span>
-                    <span class="skill-badge">Pro Tools</span>
-                    <span class="skill-badge">Logic Pro X</span>
-                    <span class="skill-badge">Ableton Live</span>
-                    <span class="skill-badge">Studio Recording</span>
-                    <span class="skill-badge">Live Sound Reinforcement</span>
-                    <span class="skill-badge">Post-Production Audio</span>
-                    <span class="skill-badge">Foley Recording</span>
-                    <span class="skill-badge">Dialogue Editing</span>
-                    <span class="skill-badge">Noise Reduction</span>
-                    <span class="skill-badge">Acoustics</span>
-                    <span class="skill-badge">Microphone Techniques</span>
-                    <span class="skill-badge">Signal Flow</span>
-                    <span class="skill-badge">Plugin Utilization (EQ, Compression, Reverb)</span>
-                </div>
+                <h3 class="text-2xl font-semibold text-[#EAE0D5] mb-6">Technical Skills:</h3>
+                <!-- Technical Skills as a multi-column list -->
+                <ul class="skill-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-2 gap-x-8">
+                    <li>Mixing</li>
+                    <li>Mastering</li>
+                    <li>Audio Editing</li>
+                    <li>Phase Correction</li>
+                    <li>Production</li>
+                    <li>Reaper</li>
+                    <li>Noise Reduction</li>
+                    <li>Dialogue Editing</li>
+                    <li>Post-Production Audio</li>
+                    <li>Sound Cleanup</li>
+                    <li>Loudness Normalization</li>
+                    <li>Audio Restoration</li>
+                </ul>
 
-                <h3 class="text-xl font-semibold text-gray-100 mt-8 mb-4">Soft Skills:</h3>
-                <div class="flex flex-wrap">
-                    <span class="skill-badge">Problem-Solving</span>
-                    <span class="skill-badge">Attention to Detail</span>
-                    <span class="skill-badge">Collaboration</span>
-                    <span class="skill-badge">Communication</span>
-                    <span class="skill-badge">Adaptability</span>
-                    <span class="skill-badge">Time Management</span>
-                    <span class="skill-badge">Creativity</span>
-                    <span class="skill-badge">Client Relations</span>
-                </div>
+                <h3 class="text-2xl font-semibold text-[#EAE0D5] mb-6">Equipment and Software:</h3>
+                <!-- Technical Skills as a multi-column list -->
+                <ul class="skill-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-2 gap-x-8">
+                    <li>Reaper</li>
+                    <li>Sennheiser HD6xx, Beyerdynamic DT 990 Pro, ATX-M50x Headphones</li>
+                    <li>Fractal Axe-Fx Products</li>
+                    <li>FabFilter</li>
+                    <li>Soundtoys 5</li>
+                    <li>Melodyne</li>
+                    <li>Melda MCompleteBundle</li>
+                    <li>Arturia V Collection 8</li>
+                    <li>Inspired Acoustics Inspirata Pro</li>
+                    <li>EastWest Hollywood Orchestra Opus Edition
+</li>
+                    <li>iZotope Ozone Advanced, RX Standard</li>
+                    <li>UAD Signature Bundle</li>
+                    <li>IK Arc 4 Room Correction Software</li>
+                    <li>Realphones 2</li>
+                    <li>Various others</li>
+                </ul>
             </div>
         </section>
 
@@ -230,8 +277,8 @@
             <div class="card text-center">
                 <p class="text-lg mb-6 text-gray-200">I'm always open to new projects and collaborations. Feel free to reach out!</p>
                 <div class="flex flex-col items-center space-y-4">
-                    <a href="mailto:your.email@example.com" class="btn-primary">Email Me: your.email@example.com</a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn-primary bg-blue-700 hover:bg-blue-800">Connect on LinkedIn</a>
+                    <a href="mailto:desmondcole1990@gmail.com" class="btn-primary">Email Me: desmondcole1990@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/desmond-cole-469b4b220/" target="_blank" class="btn-primary bg-blue-700 hover:bg-blue-800">Connect on LinkedIn</a>
                     <!-- Add other social media or portfolio links here -->
                     <!-- Example: <a href="https://soundcloud.com/yourprofile" target="_blank" class="btn-primary bg-orange-600 hover:bg-orange-700">Listen on SoundCloud</a> -->
                 </div>
@@ -242,8 +289,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
-            <p class="text-sm mt-2">Designed with <span class="text-red-500">&hearts;</span> and Tailwind CSS.</p>
+            <p>&copy; 2025 Dez Cole</p>
+            </p>
         </div>
     </footer>
 
